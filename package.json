@@ -1,0 +1,15 @@
+{
+	"name": "theme-vax",
+	"version": "0.1.0",
+	"publisher": "zhouyanlt",
+	"engines": { "vscode": "*" },
+	"contributes": {
+		"themes": [
+			{
+				"label": "Visual Assist X Theme",
+				"uiTheme": "vs",
+				"path": "./themes/vax-color-theme.json"
+			}
+		]
+	}
+}
