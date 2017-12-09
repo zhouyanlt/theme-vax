@@ -6,9 +6,9 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Visual Assist X Theme",
+				"label": "Visual Assist X",
 				"uiTheme": "vs",
-				"path": "./themes/vax-color-theme.json"
+				"path": "./themes/light_vs.json"
 			}
 		]
 	}
