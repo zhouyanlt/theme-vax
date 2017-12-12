@@ -4,9 +4,16 @@
 	"include": "./light_defaults.json",
 	"tokenColors": [
 		{
-			"scope": ["meta.embedded", "source.groovy.embedded"],
 			"settings": {
-				"foreground": "#000000ff",
+				"foreground": "#216f9e",
+				"background": "#1E1E1E"
+			}
+		},
+		{
+			"scope": ["meta.embedded", "source.groovy.embedded","meta.section entity.name.section"],
+			"settings": {
+				//"foreground": "#000000ff",
+				"foreground": "#216f9e",
 				"background":"#ffffffff"
 			}
 		},
@@ -212,7 +219,7 @@
 		{
 			"scope": "string",
 			"settings": {
-				"foreground": "#a31515"
+				"foreground": "#a4a4a7"
 			}
 		},
 		{
@@ -390,10 +397,11 @@
 		},
 		{//变量
 			"name": "Variable",
-			"scope": "variable",
+			"scope": ["variable","variable.language","variable.other","variable.other.readwrite","support.variable"],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#216f9e"
+				//"foreground": "#216f9e"
+				"foreground": "#00009b"
 			}
 		},
 		{//类名
@@ -465,6 +473,14 @@
 		{
 			"name": "Library variable",
 			"scope": "support.other.variable",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "declaration",
+			"scope": ["declaration.section entity.name.section", "declaration.tag"],
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#880000"
